@@ -1,0 +1,29 @@
+<! doctype html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <script type="application/javascript" src="script.js"></script>
+        <!--        <link rel="stylesheet" href="index.css"> -->
+        </link>
+    </head>
+
+    <body>
+        <canvas id="mycanvas" style="background-color: lightgreen" width=600 height=600
+            onmousemove="canvasMouseMove(event)"></canvas>
+    </body>
+    <br />
+    <div>
+        <button id="mybutton" onclick="startGame()">Start</button>
+        <button id="cancelbutton" onclick="clearCanvas()">Clear</button>
+        Edge Cells
+        <select id="edgeCells" onchange="setEdgeCells()">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20" selected="selected">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+    </div>
+
+    </html>

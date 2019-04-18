@@ -5,7 +5,7 @@ var interval;
 var grid = [];
 var shadowGrid = [];
 var gridSideInPixels = 0;
-var edgeCells = 22;
+var edgeCells = 20;
 var cellSideInPixels = 0;
 var bColor1 = "lightgreen";
 var bColor2 = "red";

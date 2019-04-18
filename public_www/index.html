@@ -4,26 +4,31 @@
     <head>
         <meta charset="utf-8" />
         <script type="application/javascript" src="script.js"></script>
-        <!--        <link rel="stylesheet" href="index.css"> -->
+        <link rel="stylesheet" href="index.css">
         </link>
     </head>
 
     <body>
-        <canvas id="mycanvas" style="background-color: lightgreen" width=600 height=600
-            onmousemove="canvasMouseMove(event)"></canvas>
+        <h1 style="text-align:center">Game of life pk</h1>
+        <p style="text-align:center">
+            <canvas id="mycanvas" style="background-color: lightgreen" width=600 height=600
+                onmousemove="canvasMouseMove(event)"></canvas>
+        </p>
+        <div style="text-align:center" id="buttons">
+            <button id="mybutton" onclick="startGame()">Start</button>
+            <button id="cancelbutton" onclick="clearCanvas()">Clear</button>
+            <p>Side length
+                <select id="edgeCells" onchange="setEdgeCells()">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20" selected='selected'>20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </p>
+            <p>Press <strong>Start</strong> and click green cell near red ones. See what happens.</p>
+            <p>Press <strong>Stop</strong> and click a cell cluster to red and press again <strong>Start</strong></p>
+        </div>
     </body>
-    <br />
-    <div>
-        <button id="mybutton" onclick="startGame()">Start</button>
-        <button id="cancelbutton" onclick="clearCanvas()">Clear</button>
-        Edge Cells
-        <select id="edgeCells" onchange="setEdgeCells()">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="20" selected="selected">20</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-          </select>
-    </div>
 
     </html>
